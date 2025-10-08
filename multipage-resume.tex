@@ -1,0 +1,353 @@
+%-------------------------
+% Resume in Latex
+% Author : Valen Li
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeEducationheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \multicolumn{2}{p{0.97\textwidth}}{\textrm{\small#5}} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeEducationingheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+      \textrm{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\small#1} & \small#2 \\
+      \textit{\small#3} & \textrm{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textrm{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \normalsize#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textsc{\Huge \scshape Valen Li} \\ \vspace{1pt}
+    \small 267-752-9395 $|$ \href{mailto:valenli@wharton.upenn.edu}{\underline{valenli@wharton.upenn.edu}} $|$ 
+    \href{https://linkedin.com/in/valen-li}{\underline{linkedin.com/valen-li}} $|$
+    \href{https://github.com/li-valen}{\underline{github.com/li-valen}}
+\end{center}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeEducationheading
+      {Julia R. Masterman High School}{Philadelphia, PA}
+      {GPA: 4.52/4.0} {Sep 2018 -- June 2026}
+      {Robotics Team (Co-Founder \& Lead Programmer) $|$ Chess Team (Co-Captain) $|$ AI Club (President) $|$ Programming Club (President)}
+    \resumeEducationheading 
+      {The Wharton School of the University of Pennsylvania} {Remote}
+      {GPA: UW- 4.0/4.0}{Sep 2024 -- Mar 2025}
+      {STAT 0001: Intro to Statistics and Data Science}
+    \resumeEducationingheading
+      {Community College Of Philadelphia}{In-Person}
+      {Courses: MATH 163: Discrete Mathematics I | Math 263 Discrete Mathematics II}{Sep 2025 -- Jun 2025}
+    \resumeEducationingheading 
+      {The Wharton School of the University of Pennsylvania} {Residential}
+      {3-week residential program at UPenn called: The Leadership in the Business World}{Jul 2025 -- Aug 2025}
+    \resumeEducationingheading 
+      {Oberlin College} {Remote}
+      {Pioneer Research Program (Under Full-Scholarship and given Four College Credits)}{Feb 2025 -- May 2025}
+    \resumeEducationingheading
+      {The Coding School}{Remote}
+      {Courses: Artificial Intelligence}{Dec 2022 -- May 2023}
+  \resumeSubHeadingListEnd
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Wharton's Stevens Center for Innovation in Finance}{Philadelphia, PA}
+      {Full-Stack App Developer}{Jun 2024 -- Present}
+      \resumeItemListStart
+        \resumeItem{Enhanced key features of a student loan application to accurately project college costs, using PostgreSQL for data management and Spring Boot for API development}
+        \resumeItem{Designed a responsive website for the Finiverse project, and created web features for a data visualization platform.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Comcast}{Philadelphia, PA}
+      {Software Engineering Intern}{Jun 2025 - Aug 2025}
+      \resumeItemListStart
+        \resumeItem{Developed a GitHub Actions workflow to automate MuleSoft project generation, reducing manual errors and saving developer time}
+        \resumeItem{Orchestrated a CI/CD pipeline integrating GitHub Actions with Concourse for automated deployment}
+        \resumeItem{Engineered a Flask frontend as a user interface, allowing users to configure the pipeline with a single click}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Root2Success}{Philadelphia, PA}
+      {Co-President}{Feb 2022 - Present}
+      \resumeItemListStart
+        \resumeItem{Tutored over 50 hours and developed comprehensive curriculums to teach mathematics to over 250 students across more than 25 partner schools in the School District of Philadelphia.}
+        \resumeItem{Led a team of over 80 high school volunteers and organized in-person competitions to promote engagement and foster a love for mathematics.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Artificial Intelligence (AI) Club}{Philadelphia, PA}
+      {President}{Sep 2021 - Present}
+      \resumeItemListStart
+        \resumeItem{Taught Python and key AI libraries, and developed and led an AI summer camp in partnership with a non-profit organization.}
+        \resumeItem{Educated over 75 members on foundational AI concepts and challenged common misconceptions about artificial intelligence.}
+        \resumeItem{Secured 2nd place (\$2500) at the Ctrl+Shift competition by creating and presenting li-valen.github.io/LearnAI.}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {Carnegie Mellon University}{Remote}
+      {Cyber-Security Researcher}{Feb 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Worked with professor \href{https://www.cmu.edu/ini/news/2025/faculty-spotlight-hanan-hibshi.html}{Hanan Hibshi} in the research concentration of: The Practical Challenge of Writing Secure Code}
+        \resumeItem{Focussed on the applications of Self-Adapting Machine Learning Models (SEAL) in cyber security, specifically phishing models}
+        \resumeItem{Created a SEAL model that outperformed traditional classification models and wrote a paper}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {University of Washington}{Remote}
+      {Machine Learning Researcher}{June 2024 -- Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Trained ML models such as XGBoost, LightGBM, CatBoost, Random Forest, K-Means Clustering, and GNNs on an emerging alternative (SMBJ) to traditional PCR techniques used in genetic sequencing and identification.}
+        \resumeItem{Based on the results, on COVID Variants my hyper-parameterized model consistently achieved 99.9\%+ accuracy even for single mismatch molecules.}
+    \resumeItemListEnd
+      
+    \resumeSubheading
+      {Datacurve (YC W24)}{Remote}
+      {Machine Learning Model Trainer}{Nov 2024 -- Feb 2024}
+      \resumeItemListStart
+        \resumeItem{Trained Machine Learning Models for large companies and startups in need of ML models}
+        \resumeItem{Helped develop the dataset used by these companies, utilized in training}
+        \resumeItem{Primarily focused on using applicational math, and problem-solving skills to ``teach'' and train these models}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Extracurricular Activities}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {We Connect The Dots}{Remote}
+      {Community Ambassador $|$ AI Summer Camp Instructor}{Dec 2023 -- July 2025}
+      \resumeItemListStart
+        \resumeItem{Managed sponsor outreach, program planning, and email marketing.}
+        \resumeItem{Created a Free AI Summer Camp teaching how to use the AI.}
+        \resumeItem{Taught students over the summer how to use AI libraries like Pandas, NumPy, and Matplotlib.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {FIRST Robotics}{Philadelphia, PA}
+      {Lead Programmer $|$ Mentor $|$ Inspection Lead $|$ Tournament Volunteer $|$ FRC Co-Founder}{Sep 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Lead Programmer of teams: 22284 and 22279 (state-qualifier) simultaneously}
+        \resumeItem{Co-founded FRC team 10918 Bluesteel Dragons first year at Masterman since 2019}
+        \resumeItem{Raised \$20k in funding to support new FRC team}
+        \resumeItem{Created an autonomous program utilizing Virtual Field Mapping, Computer Vision, and Pure Pursuit algorithms}
+        \resumeItem{Volunteered at FIRST Lego League (FLL) tournaments and mentor my school's FLL robotics team weekly} 
+        \resumeItem{Winner of: RoboJawn 2024 $|$ Motivate Award $|$ Think Award}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {USChess}{Onsite}
+      {Masterman Chess Team Co-Captain $|$ Tournament Director $|$ Chess Camp Instructor}{Sep 2018 -- Present}
+      \resumeItemListStart
+        \resumeItem{Co-Captain for the Elementary/Middle/High School Masterman Chess team}
+        \resumeItem{Held weekly coaching sessions for the Elementary and Middle School}
+        \resumeItem{Certified tournament director $|$ Volunteered to direct the Elementary/Middle School Chess League }
+        \resumeItem{Earned: $>$\$3,500 $|$ 2x @ World Open (4th) $|$ 3x @ Nationals (5th) $|$ Liberty Bell (1st) $|$ Chess Congress (4th)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{\href{micropantry.org}{\underline{Micro Pantry Mobile App}}} $|$ \emph{Computer Vision, React-native, Gen AI}}{April 2024 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed an app using Expo using React and React-native as the frontend}
+            \resumeItem{Implemented Tensorflow, specifically ICR, receipt, and food detection models to import into virtual Pantry}
+            \resumeItem{Implemented Generative AI models to give feedback for meal suggestions, and nutrition advice}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{https://li-valen.github.io/LearnAI/}{\underline{LearnAI}}} $|$ \emph{Computer Vision, Javascript, GSAP}}{Feb 2024 -- May 2024}
+          \resumeItemListStart
+            \resumeItem{Created an award-winning website redefining AI education with \$2,500 in funding.}
+            \resumeItem{Addressed negative stigmas by providing interactive and comprehensive AI learning experiences.}
+            \resumeItem{Developed a complex platform leveraging advanced models like CocoSsd and MobileNet.}
+            \resumeItem{Built from scratch utilizing GSAP and Lenis for animations and smooth-scrolling also mimicking features from Apple's website.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{http://bit.ly/42uk9Ex}{\underline{Company Case Competition Analysis}}} $|$ \emph{Figma, Business Strategy}}{Jul 2025 -- Aug 2025}
+          \resumeItemListStart
+            \resumeItem{Developed a comprehensive business strategy and pitch for Merck, recommending a partnership to create a complementary product for the newly acquired drug, Ohtuvayre.}
+            \resumeItem{Designed and built a prototype for a smart inhaler and tracking app using Figma, visualizing the proposed product and user experience.}
+            \resumeItem{Presented the pitch in a 15-minute presentation for the Leadership in the Business World case competition.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/li-valen/calc-final-project}{\underline{Real-time Object Detection with Edge Derivatives}}} $|$ \emph{Python, OpenCV, PyTorch, YOLOv8, LaTeX}}{May 2025}
+          \resumeItemListStart
+            \resumeItem{Authored a mathematical paper on image derivatives (Sobel, Laplacian) and implemented OpenCV edge detectors with code examples.}
+            \resumeItem{Built a real-time object detection and instance segmentation pipeline using YOLOv8 with FPS overlay and COCO class labels.}
+            \resumeItem{Documented setup and usage; provided a reproducible environment and compiled LaTeX paper.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{https://james-h-campbell.vercel.app/}{\underline{The Woodlands Cemetery Project}}} $|$ \emph{Web Development, Research}}{Mar 2025 -- May 2025}
+          \resumeItemListStart
+            \resumeItem{Researched and unearthed the life of James Hepburn Campbell, a 19th-century individual, as part of a rigorous research project for the A.P. United States History course.}
+            \resumeItem{Independently created a professional website in just 3 days to detail Campbell's life and document the team's research process.}
+            \resumeItem{Contributed over 280 hours to the project, demonstrating strong commitment and research skills.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{\href{https://github.com/li-valen/M3-paper}{\underline{M3 Mathworks Math Modeling Paper}}} $|$ \emph{Mathematical Modeling, Data Analysis}}{Mar 2025 -- Mar 2025}
+          \resumeItemListStart
+            \resumeItem{Collaborated with a team during a 14-hour challenge to develop mathematical models for predicting key metrics during heatwaves.}
+            \resumeItem{Engineered models to accurately predict indoor temperatures, peak power consumption, and a heat risk index.}
+            \resumeItem{Analyzed complex data sets to inform modeling decisions and provide data-driven insights.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{CMU Research on Cybersecurity} $|$ \emph{AI, Cybersecurity, Research}}{Jun 2025 -- Aug 2025}
+          \resumeItemListStart
+            \resumeItem{Contributed to a research project on cybersecurity, focusing on using Self-Adapting Language Models (SEAL) for improving email phishing filters.}
+            \resumeItem{Developed a research proposal and methodology for creating an AI-powered filter that can autonomously learn from new phishing tactics.}
+            \resumeItem{Authored a paper, "Harnessing Self-Adapting Language Models (SEAL) for Continual Self-Improvement of Email Phishing Filters," detailing the project's findings and proposed solutions.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+
+%-----------AWARDS-----------
+\section{Awards}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Good Citizen Award}}{Mar 2025}
+          \resumeItem{Awarded by The Union League of Philadelphia for being 2/40,000 nominated by a Philly nonprofit for demonstrating hard work, honesty, curiosity, and loyalty}
+      \resumeProjectHeading
+          {\textbf{1st Place - Innovation League 2024}}{Dec 2024}
+            \resumeItem{Awarded \$5000 $|$ Prototyped, developed, and pitched an innovative tech startup to a panel of judges.}
+      \resumeProjectHeading
+          {\textbf{2nd Place - Ctrl+Shift 2024}}{May 2024}
+            \resumeItem{Awarded \$2500 $|$ Developed an innovative website that redefines AI education.} 
+      \resumeProjectHeading
+          {\textbf{3rd Place- Penn Mathmatics Contest}}{April 2025}
+          \resumeItem{Awarded by The University of Pennsylvania for winning 3rd Place, scoring a 65/80 at the Penn Math Contest (PMC IV)}
+      \resumeProjectHeading
+          {\textbf{Invited to the American Invitational Mathematics Examination}}{Nov 2024}
+            \resumeItem{Scored a 96 (Top 5-10\%) on the American Mathematics Competition (12B)}
+      \resumeProjectHeading
+          {\textbf{Congressional App Challenge Finalist}}{Nov 2024}
+          \resumeItem{Recognized by the House of Representatives and Madeleine Dean}
+      \resumeProjectHeading
+          {\textbf{Stokes Grant}}{Jun 2025}
+          \resumeItem{Awarded \$1000 by Germantown Friends School for our startup}
+      \resumeProjectHeading
+          {\textbf{3rd Place- Bear Innovation Challenge}}{Jun 2025}
+          \resumeItem{Awarded \$1000 for pitching a DIY STEM Education company}
+      \resumeProjectHeading
+          {\textbf{Questbridge Prep Scholar}}{May 2024}
+          \resumeItem{Recognized by Questbridge for academic excellence, personal qualities, and financial need}
+      \resumeProjectHeading
+          {\textbf{Top 150 M3 Mathworks Math Modeling Challenge}}{Mar 2025}
+          \resumeItem{Recognized by the Society for Industrial and Applied Mathematics}
+      \resumeProjectHeading
+          {\textbf{National First Generation Recognition Program}}{Aug 2024}
+          \resumeItem{Recognized by Collegboard for outstanding academic achievement as a first-generation student}
+      \resumeProjectHeading
+          {\textbf{National Recognition Program}}{Jun 2025}
+          \resumeItem{Recognized by Collegboard for outstanding academic achievement}
+    \resumeSubHeadingListEnd
+%-------------------------------------------
+\end{document}
