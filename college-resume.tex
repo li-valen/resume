@@ -1,6 +1,6 @@
 %-------------------------
 % Resume in Latex
-% Author : Valen Li
+% Author: Valen Li
 % License : MIT
 %------------------------
 
@@ -56,7 +56,7 @@
   \vspace{-4pt}\scshape\raggedright
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
+% Ensure that generate pdf is machine-readable/ATS parsable
 \pdfgentounicode=1
 
 %-------------------------
@@ -104,6 +104,13 @@
       \normalsize#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
+\newcommand{\resumeProjectHeadings}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \normalsize #1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
@@ -133,10 +140,6 @@
       {Julia R. Masterman High School}{Philadelphia, PA}
       {GPA: 4.53/4.0} {Sep 2018 -- June 2026}
       {Robotics Team (Co-Founder \& Lead Programmer) $|$ Chess Team (Co-Captain) $|$ AI Club (President)}
-    \resumeEducationheading 
-      {The Wharton School of the University of Pennsylvania} {Remote}
-      {GPA: UW- 4.0/4.0}{Sep 2024 -- Mar 2025}
-      {STAT 0001: Intro to Statistics and Data Science}
     \resumeEducationingheading
       {Community College Of Philadelphia}{In-Person}
       {Courses: MATH 163: Discrete Mathematics I | Math 263 Discrete Mathematics II}{Sep 2025 -- Jun 2025}
@@ -155,8 +158,9 @@
       {Technology Teacher Leader Aide / IT}{Sep 2025 -- Present}
       \resumeItemListStart
         \resumeItem{Managed Chromebook deployment and configuration for students}
-        \resumeItem{Provided technical support assistance to teachers and students, resolving hardware and software issues}
+        \resumeItem{Provided technical support and assistance to teachers and students, resolving hardware and software issues}
         \resumeItem{Assisted teachers with laptop repairs, inventory indexing, cable management, and grading papers}
+        \resumeItem{Redesigned the school \href{http://masterman.philasd.org/}{\underline{website}}}
       \resumeItemListEnd
       
     \resumeSubheading
@@ -164,7 +168,7 @@
       {Full-Stack App Developer}{Jun 2024 -- Jun 2025}
       \resumeItemListStart
         \resumeItem{Enhanced key features of a student loan application to accurately project college costs, using PostgreSQL for data management and Spring Boot for API development}
-        \resumeItem{Designed a responsive website for the Finiverse project, and created web features for a data visualization platform.}
+        \resumeItem{Designed a responsive \href{https://finiverse.wharton.upenn.edu}{\underline{website}} for the Finiverse project, and created web features for a data visualization platform.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -180,7 +184,7 @@
       {Carnegie Mellon University}{Remote}
       {Cyber-Security Researcher}{Feb 2025 -- August 2025}
       \resumeItemListStart
-        \resumeItem{Worked with professor \href{https://www.cmu.edu/ini/news/2025/faculty-spotlight-hanan-hibshi.html}{Hanan Hibshi} in the research concentration of: The Practical Challenge of Writing Secure Code}
+        \resumeItem{Worked with professor \href{https://www.cmu.edu/ini/news/2025/faculty-spotlight-hanan-hibshi.html}{\underline{Hanan Hibshi}} on: The Practical Challenge of Writing Secure Code}
         \resumeItem{Contributed to a research project on cybersecurity, focusing on using Self-Adapting Language Models (SEAL) for improving email phishing filters.}
         \resumeItem{Developed a research proposal and methodology for creating an AI-powered filter that can autonomously learn from new phishing tactics.}
     \resumeItemListEnd
@@ -190,8 +194,8 @@
       {Machine Learning Researcher}{June 2024 -- Aug 2024}
       \resumeItemListStart
         \resumeItem{Trained ML models such as XGBoost, LightGBM, CatBoost, Random Forest, K-Means Clustering, and GNNs on an emerging alternative (SMBJ) to traditional PCR techniques used in genetic sequencing and identification.}
-        \resumeItem{Built an AI \textbf{\href{https://github.com/li-valen/SMBJClassifier}{\underline{system}}} to classify COVID-19 variants from Single Molecule Break Junction (SMBJ) conductance signatures; achieved up to 99.97\% accuracy (CatBoost).}
-        \resumeItem{Developed a preprocessing pipeline: filtering, R\textsuperscript{2}-based QC, conductance conversion, and 1D/2D histogram features.}
+        \resumeItem{Built an AI {\href{https://github.com/li-valen/SMBJClassifier}{\underline{system}}} to classify COVID-19 variants from Single Molecule Break Junction (SMBJ) conductance signatures; achieved up to 99.97\% accuracy (CatBoost).}
+        \resumeItem{Developed a pipeline: filtering, R\textsuperscript{2}-based QC, conductance conversion, and 1D/2D histogram features.}
     \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -203,10 +207,11 @@
       {Lead Programmer $|$ Mentor $|$ Inspection Lead $|$ Tournament Volunteer $|$ FRC Co-Founder}{Sep 2022 -- Present}
       \resumeItemListStart
         \resumeItem{Lead Programmer of teams: 22284 and 22279 (state-qualifier) simultaneously}
-        \resumeItem{Co-founded FRC team 10918 Bluesteel Dragons first year at Masterman since 2019}
+        \resumeItem{Co-founded FRC team 10918 Bluesteel Dragons, first year at Masterman since 2019}
         \resumeItem{Raised \$20k in funding to support new FRC team}
-        \resumeItem{Created an autonomous program utilizing Virtual Field Mapping, Computer Vision, and Pure Pursuit algorithms}
-        \resumeItem{Volunteered at FIRST Lego League (FLL) tournaments and mentor my school's FLL robotics team weekly} 
+        \resumeItem{Created autonomous programs utilizing Virtual Field Mapping, Computer Vision, and Pure Pursuit algorithms}
+        \resumeItem{Volunteered at FIRST Lego League (FLL) tournaments and mentored my school's FLL robotics team weekly}
+        \resumeItem{Built an attendance system and \href{https://masterman-robotics-signin.vercel.app}{\underline{website}} using an NFC reader and React}
         \resumeItem{Winner of: RoboJawn 2024 $|$ Motivate Award $|$ Think Award}
       \resumeItemListEnd
 
@@ -236,7 +241,6 @@
           \resumeItemListStart
             \resumeItem{Authored a mathematical paper on image derivatives (Sobel, Laplacian) and implemented OpenCV edge detectors with code examples.}
             \resumeItem{Built a real-time object detection and instance segmentation pipeline using YOLOv8 with FPS overlay and COCO class labels.}
-            \resumeItem{Documented setup and usage; provided a reproducible environment and compiled LaTeX paper.}
           \resumeItemListEnd
         \resumeProjectHeading
           {\textbf{\href{https://james-h-campbell.vercel.app/}{\underline{The Woodlands Cemetery Project}}} $|$ \emph{Web Development, Research}}{Mar 2025 -- May 2025}
@@ -263,16 +267,19 @@
             \resumeItem{Awarded \$2500 $|$ Developed an innovative \href{https://li-valen.github.io/LearnAI/}{\underline{website}} that redefines AI education.} 
       \resumeProjectHeading
           {\textbf{1st Place- AMC 12B with Distinction and AIME Qualifer}}{Nov 2024}
-            \resumeItem{Scored 1st in my school among seniors and juniors 2 years in a row and scored in the top 5\% of all test takers in the country qualifying me for the American Invitational Mathematics Examination}
+            \resumeItem{Scored 1st in my school among seniors and juniors 2 years in a row and scored in the top 5\% of all test takers in the country, qualifying me for the American Invitational Mathematics Examination}
       \resumeProjectHeading
           {\textbf{3rd Place- Penn Mathmatics Contest}}{April 2025}
           \resumeItem{Awarded by The University of Pennsylvania for winning 3rd Place, scoring a 65/80 at the Penn Math Contest (PMC IV)}
       \resumeProjectHeading
+          {\textbf{Questbridge National College Match Finalist and Questbridge Prep Scholar}}{Sep 2025}
+          \resumeItem{Recognized for academic excellence, personal qualities, and for being a competitive candidate for their college partners.}\
+      \resumeProjectHeading
           {\textbf{Congressional App Challenge Finalist}}{Nov 2024}
           \resumeItem{Recognized by the House of Representatives and Madeleine Dean}
-      \resumeProjectHeading
-          {\textbf{Questbridge National College Match Finalist and Questbridge Prep Scholar}}{September 2025}
-          \resumeItem{Recognized by Questbridge for academic excellence, personal qualities, and financial need, and for being a competitive candidate for admission to their college partners.}
+    \resumeProjectHeading
+        {\textbf{Gates Scholarship Semi-Finalist}}
+        {Dec 2025}
     \resumeSubHeadingListEnd
 %-------------------------------------------
 \end{document}
