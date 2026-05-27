@@ -1,26 +1,24 @@
 # Valen Li — Resume
 
-This repository contains the source LaTeX files and compiled PDFs for my single-page and multi-page resumes.
+This repository contains the LaTeX source and compiled PDF for the single-page resume.
 
 ## Files
 - `singlepage-resume.tex` — LaTeX source for the single-page resume
-- `singlepage-resume.pdf` — compiled PDF
-- `multipage-resume.tex` — LaTeX source for the multi-page resume
-- `multipage-resume.pdf` — compiled PDF
+- `singlepage-resume.pdf` — compiled PDF (renamed from `singpage-resume.pdf` if needed)
 
 ## Build
-You can build either resume locally with a LaTeX distribution (e.g., TeX Live or MacTeX):
+Build the single-page resume locally with a LaTeX distribution (e.g., TeX Live or MiKTeX):
 
-```bash
+```powershell
 pdflatex singlepage-resume.tex
-pdflatex multipage-resume.tex
-```
+``` 
 
-If your LaTeX setup requires multiple runs for references, run `pdflatex` twice.
+Run `pdflatex` twice if your setup requires multiple passes for references.
 
 ## Notes
+- The resume source was recently updated to reflect additional math and modeling work (see the "Math Modeling Analysis" project in the resume Projects section).
 - Fonts and margins are tuned for ATS readability and compact layout.
-- Links in the header are clickable in the PDFs.
+- Links in the header are clickable in the PDF.
 
 ## License
 MIT
